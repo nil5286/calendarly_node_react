@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.react-calendar {
+  width: 100%;
+  border: none;
+}
+
+.react-calendar__tile {
+  padding: 10px;
+  text-align: center;
+}
+
+.react-calendar__tile--active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.react-calendar__navigation__label {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* Fully booked or unavailable dates are automatically styled as disabled */
+
+/* Available but unbooked dates */
+.react-calendar__tile.available {
+  background-color: #d4edda; /* Light green background */
+  color: #155724;
+}
+
+/* Partially booked dates */
+.react-calendar__tile.partially-booked {
+  background-color: #fff3cd; /* Light yellow background */
+  color: #856404;
+}
